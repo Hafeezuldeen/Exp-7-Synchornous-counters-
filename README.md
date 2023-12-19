@@ -1,5 +1,5 @@
 # NAME: S.HAFEEZUL DEEN
-# REFERENCE NO. :23008281
+# REFERENCE NO. :23008281 
 # Exp-6-Synchornous-counters - up counter and down counter 
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
