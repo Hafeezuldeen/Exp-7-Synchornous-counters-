@@ -6,6 +6,7 @@
 ### SOFTWARE REQUIRED:   Quartus prime
 ### THEORY 
 ### PROCEDURE
+```
 1.Create a new project in Quartus2 software . 
 2.Name the project as uc for upcounter and dc for down counter.
 3.Create a new verilog hdl file in the project file.
@@ -14,6 +15,7 @@
 6.Create a loop using if-else with condition parameter as reset.
 7.End the loop. 
 8.End the module
+```
 # UP COUNTER 
 The counter is a digital sequential circuit and here it is a 4 bit counter, which simply means it can count from 0 to 15 and vice versa based upon the direction of counting (up/down). 
 
@@ -59,7 +61,7 @@ endmodule
 ```
 ### RTL LOGIC FOR UP COUNTER
 ![291245109-ebe41339-2024-4c68-b298-0662a96f314b](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/f42c0c3a-c2a9-46cd-9aac-b2cf93a7d9af)
-###
+### TRUTH TABLE
 ![291246360-64509e6f-c8ed-4122-a383-1a79c63302ca](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/425272b8-679d-4fc8-9389-c11d2a6e4302)
 
 ### TIMING DIAGRAM FOR UP COUNTER
