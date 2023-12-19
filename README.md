@@ -1,10 +1,20 @@
+# NAME: S.HAFEEZUL DEEN
+# REFERENCE NO. :23008281
 # Exp-6-Synchornous-counters - up counter and down counter 
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ### SOFTWARE REQUIRED:   Quartus prime
 ### THEORY 
-
-## UP COUNTER 
+### PROCEDURE
+1.Create a new project in Quartus2 software . 
+2.Name the project as uc for upcounter and dc for down counter.
+3.Create a new verilog hdl file in the project file.
+4.Name the module declare as dc and uc for down counter and upcounter. 
+5.Within the module declare input and output variables.
+6.Create a loop using if-else with condition parameter as reset.
+7.End the loop. 
+8.End the module
+# UP COUNTER 
 The counter is a digital sequential circuit and here it is a 4 bit counter, which simply means it can count from 0 to 15 and vice versa based upon the direction of counting (up/down). 
 
 The counter (“count“) value will be evaluated at every positive (rising) edge of the clock (“clk“) cycle.
@@ -33,6 +43,27 @@ The Q outputs of each flip-flop will serve as the respective binary bits of the 
 
 Four-bit “Up” Counter
 ![image](https://user-images.githubusercontent.com/36288975/169644758-b2f4339d-9532-40c5-af40-8f4f8c942e2c.png)
+### PROGRAM:
+```
+Module upcounter(clk,a);
+input clk;
+output reg[3:0];
+always @(posedge clk)
+begin
+a[3]=(a[2]&a[1]&a[0])^a[3];
+a[2]=(a[1]&a[0])^a[2];
+a[1]=(a[0]^a[1]);
+a[0]= ^a[0];
+end
+endmodule
+```
+### RTL LOGIC FOR UP COUNTER
+![291245109-ebe41339-2024-4c68-b298-0662a96f314b](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/f42c0c3a-c2a9-46cd-9aac-b2cf93a7d9af)
+###
+![291246360-64509e6f-c8ed-4122-a383-1a79c63302ca](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/425272b8-679d-4fc8-9389-c11d2a6e4302)
+
+### TIMING DIAGRAM FOR UP COUNTER
+![291245841-cd6e5859-9fd4-46ed-9826-37e235c8dced](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/c37d4c78-e2dc-4045-a8d0-409bb3344f8f)
 
 
 
@@ -41,48 +72,42 @@ Four-bit “Up” Counter
 As well as counting “up” from zero and increasing or incrementing to some preset value, it is sometimes necessary to count “down” from a predetermined value to zero allowing us to produce an output that activates when the zero count or some other pre-set value is reached.
 
 This type of counter is normally referred to as a Down Counter, (CTD). In a binary or BCD down counter, the count decreases by one for each external clock pulse from some preset value. Special dual purpose IC’s such as the TTL 74LS193 or CMOS CD4510 are 4-bit binary Up or Down counters which have an additional input pin to select either the up or down count mode.
+4-bit Count Down CounteTr
 ![image](https://user-images.githubusercontent.com/36288975/169644844-1a14e123-7228-4ed8-81a9-eb937dff4ac8.png)
 
-
-4-bit Count Down Counter
-### Procedure
-/* write all the steps invloved */
-
-
-
 ### PROGRAM 
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+```
+Module downcounter(clk,a);
+input clk;
+output reg[3:0]a;
+always @(posedge clk)
+begin
+a[3]=(~a[2]&~a[1]&~a[0])^a[3];
+a[2]=(~a[1]&~a[0])^a[2];
+a[1]=(~a[0]^a[1]);
+a[0]=1^a[0];
+end
+endmodule
+```
 
 
 
 
 
 
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-
-
-
-
-
-
-
-
-
-### TIMING DIGRAMS FOR COUNTER  
-
-
-
+### RTL LOGIC DOWN COUNTER 
+![291245393-e3baace9-535a-4290-b20e-fb79578f4f3d](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/bfde9cec-7fff-4de0-a003-3be4c68f5217)
 
 
 ### TRUTH TABLE 
+![291246661-835858db-efeb-40c8-98d5-889a3cf28827](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/e5c8310c-2e7f-45cf-96cd-219c9a1c9491)
+
+### TIMING DIAGRAM FOR DOWN COUNTER
+![291246075-d18a7c81-94e8-4bdf-998a-18752b3e162e](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/bfdc9c7e-693f-4e04-adf7-9766543134ff)
 
 
 
 
 
-
-### RESULTS 
+# RESULTS:
+Thus synchornous counters up counter and down counter circuit are studied and the truth table for different logic gates are verified.
