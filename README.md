@@ -1,4 +1,4 @@
-# NAME: S.HAFEEZUL DEEN
+![292232607-b94207e2-8bd7-46eb-adbd-9099c856823c](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/1ea4563c-f948-471a-8cd4-0eba0460c01f)![292232607-b94207e2-8bd7-46eb-adbd-9099c856823c](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/070bb5cd-2153-41d9-99fd-ef3754136b43)# NAME: S.HAFEEZUL DEEN
 # REFERENCE NO. :23008281 
 # Exp-6-Synchornous-counters - up counter and down counter 
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
@@ -47,25 +47,26 @@ Four-bit “Up” Counter
 ![image](https://user-images.githubusercontent.com/36288975/169644758-b2f4339d-9532-40c5-af40-8f4f8c942e2c.png)
 ### PROGRAM:
 ```
-Module upcounter(clk,a);
+module uc(clk, A);
 input clk;
-output reg[3:0];
+output reg [2:0]A;
 always @(posedge clk)
 begin
-a[3]=(a[2]&a[1]&a[0])^a[3];
-a[2]=(a[1]&a[0])^a[2];
-a[1]=(a[0]^a[1]);
-a[0]= ^a[0];
+A[2]=(((A[0])&(A[1]))^A[2]);
+A[1]=(A[0])^A[1];
+A[0]=A[0]^1;
 end
 endmodule
 ```
 ### RTL LOGIC FOR UP COUNTER
-![291245109-ebe41339-2024-4c68-b298-0662a96f314b](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/f42c0c3a-c2a9-46cd-9aac-b2cf93a7d9af)
+![292209407-daae41e1-7e3f-4f37-abdf-0f9d6f1e21ea](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/496bb623-d669-4a79-99e4-5341616678cc)
+
 ### TRUTH TABLE
-![291246360-64509e6f-c8ed-4122-a383-1a79c63302ca](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/425272b8-679d-4fc8-9389-c11d2a6e4302)
+![292232607-b94207e2-8bd7-46eb-adbd-9099c856823c](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/4c0d7e64-63b8-470f-a5fd-6fd98807cbee)
 
 ### TIMING DIAGRAM FOR UP COUNTER
-![291245841-cd6e5859-9fd4-46ed-9826-37e235c8dced](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/c37d4c78-e2dc-4045-a8d0-409bb3344f8f)
+![292212113-3251ccc3-90a1-4c63-8e50-457e2efc574e](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/66671293-cfc2-4f8d-8fe3-ce8daed9eeeb)
+
 
 
 
@@ -79,17 +80,15 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 ### PROGRAM 
 ```
-Module downcounter(clk,a);
+module dc(clk,A);
 input clk;
-output reg[3:0]a;
+output reg [2:0]A;
 always @(posedge clk)
 begin
-a[3]=(~a[2]&~a[1]&~a[0])^a[3];
-a[2]=(~a[1]&~a[0])^a[2];
-a[1]=(~a[0]^a[1]);
-a[0]=1^a[0];
+A[2]=(((~A[0])&(~A[1]))^A[2]);
+A[1]=(~A[0])^A[1];
+A[0]=1^A[0];
 end
-endmodule
 ```
 
 
@@ -98,14 +97,17 @@ endmodule
 
 
 ### RTL LOGIC DOWN COUNTER 
-![291245393-e3baace9-535a-4290-b20e-fb79578f4f3d](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/bfde9cec-7fff-4de0-a003-3be4c68f5217)
+![292209486-a6a771ed-4039-49f3-a335-4b0e7dc5409d](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/4f806ce8-8ad7-4e2b-a7f2-552e41d7b967)
+
 
 
 ### TRUTH TABLE 
-![291246661-835858db-efeb-40c8-98d5-889a3cf28827](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/e5c8310c-2e7f-45cf-96cd-219c9a1c9491)
+![292233455-5de2a377-f527-4dd1-9bf5-4a3c1cd286bc](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/85fc4456-147c-483b-af07-c9fc684dc021)
+
 
 ### TIMING DIAGRAM FOR DOWN COUNTER
-![291246075-d18a7c81-94e8-4bdf-998a-18752b3e162e](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/bfdc9c7e-693f-4e04-adf7-9766543134ff)
+![292210864-bb49bf33-b767-49b7-8606-38380e0486a0](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/a9eb3ee3-1e47-4f8b-9abe-186fa4e7a088)
+
 
 
 
