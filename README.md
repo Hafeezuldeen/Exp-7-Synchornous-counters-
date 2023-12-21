@@ -1,4 +1,4 @@
-![292232607-b94207e2-8bd7-46eb-adbd-9099c856823c](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/1ea4563c-f948-471a-8cd4-0eba0460c01f)![292232607-b94207e2-8bd7-46eb-adbd-9099c856823c](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/070bb5cd-2153-41d9-99fd-ef3754136b43)# NAME: S.HAFEEZUL DEEN
+# NAME: S.HAFEEZUL DEEN
 # REFERENCE NO. :23008281 
 # Exp-6-Synchornous-counters - up counter and down counter 
 ### AIM: To implement 4 bit up and down counters and validate  functionality.
