@@ -59,13 +59,17 @@ end
 endmodule
 ```
 ### RTL LOGIC FOR UP COUNTER
-![292209407-daae41e1-7e3f-4f37-abdf-0f9d6f1e21ea](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/496bb623-d669-4a79-99e4-5341616678cc)
+![292366741-a4143de5-ff46-4286-8037-63e45d71d44b](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/2337b000-a10a-4701-9e7a-039e4de6bd42)
+
 
 ### TRUTH TABLE
-![292232607-b94207e2-8bd7-46eb-adbd-9099c856823c](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/4c0d7e64-63b8-470f-a5fd-6fd98807cbee)
+![292366830-aab967aa-f5d8-4383-be1d-c19c1e14f121](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/d5e809ac-c593-4471-b9cf-25ea4d19f930)
+
+
 
 ### TIMING DIAGRAM FOR UP COUNTER
-![292212113-3251ccc3-90a1-4c63-8e50-457e2efc574e](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/66671293-cfc2-4f8d-8fe3-ce8daed9eeeb)
+![292366801-5692d144-6372-4faa-960e-9beae6685ed1](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/7edc3d1b-8a7d-4803-a44c-ad0f47da6941)
+
 
 
 
@@ -98,16 +102,18 @@ endmodule
 
 
 ### RTL LOGIC DOWN COUNTER 
-![292209486-a6a771ed-4039-49f3-a335-4b0e7dc5409d](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/4f806ce8-8ad7-4e2b-a7f2-552e41d7b967)
+![292367431-9b524cc1-9a1a-4b3d-9815-21bdd0dbda7f](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/6efdadd7-5d06-46c1-9bf4-54b0e39e6e4d)
+
 
 
 
 ### TRUTH TABLE 
-![292233455-5de2a377-f527-4dd1-9bf5-4a3c1cd286bc](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/85fc4456-147c-483b-af07-c9fc684dc021)
+![292367510-409de45b-b9cc-4193-9f8a-f91edde7c0c4](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/a1819724-71b9-4f9a-9600-445d2de493ad)
 
 
 ### TIMING DIAGRAM FOR DOWN COUNTER
-![292210864-bb49bf33-b767-49b7-8606-38380e0486a0](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/a9eb3ee3-1e47-4f8b-9abe-186fa4e7a088)
+![292367474-b7efc07f-8a4b-42e6-b850-b88874142cdd](https://github.com/Hafeezuldeen/Exp-7-Synchornous-counters-/assets/144979314/64fd4217-35c6-47c9-9a77-c19346e38be0)
+
 
 
 
